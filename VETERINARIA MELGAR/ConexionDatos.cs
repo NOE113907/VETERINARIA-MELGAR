@@ -14,7 +14,7 @@ namespace VETERINARIA_MELGAR
         {
             conexion = new SqlConnection(@"Data Source = NOE\SQLEXPRESS; Initial Catalog = VETERINARIA_MELGAR; Integrated Security = True");
             conexion.Open();
-            SqlCommand cmd = new SqlCommand()
+            SqlCommand cmd = new SqlCommand();
         }
         
             
