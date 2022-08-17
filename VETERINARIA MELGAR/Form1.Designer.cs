@@ -1,6 +1,6 @@
 ﻿namespace VETERINARIA_MELGAR
 {
-    partial class grbdueño
+    partial class VeterinariaMelgar
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(grbdueño));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VeterinariaMelgar));
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblsexo = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbfemenino = new System.Windows.Forms.RadioButton();
             this.rdbmasc = new System.Windows.Forms.RadioButton();
             this.lblcodigo = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
             this.lblimporte = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,29 +44,32 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.grbmascota = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rdbdias = new System.Windows.Forms.RadioButton();
+            this.rdbaño = new System.Windows.Forms.RadioButton();
             this.cbotipo = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.txtnommascota = new System.Windows.Forms.TextBox();
-            this.Atención = new System.Windows.Forms.ListBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lstAtención = new System.Windows.Forms.ListBox();
+            this.dtpfecha = new System.Windows.Forms.DateTimePicker();
             this.txtimporte = new System.Windows.Forms.TextBox();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.btngrabar = new System.Windows.Forms.Button();
-            this.rdbaño = new System.Windows.Forms.RadioButton();
-            this.rdbdias = new System.Windows.Forms.RadioButton();
+            this.txtatencion = new System.Windows.Forms.Label();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
+            this.txtidatencion = new System.Windows.Forms.TextBox();
             this.grcliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.grbmascota.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(80, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 30);
-            this.textBox1.TabIndex = 0;
+            this.txtnombre.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.Location = new System.Drawing.Point(80, 80);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(155, 30);
+            this.txtnombre.TabIndex = 0;
             // 
             // lblnombre
             // 
@@ -88,17 +91,17 @@
             this.lblsexo.TabIndex = 7;
             this.lblsexo.Text = "Sexo";
             // 
-            // radioButton1
+            // rdbfemenino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(59, 131);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 25);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Femenino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbfemenino.AutoSize = true;
+            this.rdbfemenino.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbfemenino.Location = new System.Drawing.Point(59, 131);
+            this.rdbfemenino.Name = "rdbfemenino";
+            this.rdbfemenino.Size = new System.Drawing.Size(85, 25);
+            this.rdbfemenino.TabIndex = 2;
+            this.rdbfemenino.TabStop = true;
+            this.rdbfemenino.Text = "Femenino";
+            this.rdbfemenino.UseVisualStyleBackColor = true;
             // 
             // rdbmasc
             // 
@@ -123,13 +126,13 @@
             this.lblcodigo.Text = "Código ";
             this.lblcodigo.Click += new System.EventHandler(this.lblcodigo_Click);
             // 
-            // textBox3
+            // txtcodigo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(72, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 30);
-            this.textBox3.TabIndex = 4;
+            this.txtcodigo.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo.Location = new System.Drawing.Point(72, 183);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(155, 30);
+            this.txtcodigo.TabIndex = 4;
             // 
             // lblimporte
             // 
@@ -176,10 +179,10 @@
             // 
             this.grcliente.Controls.Add(this.pictureBox2);
             this.grcliente.Controls.Add(this.lblnombre);
-            this.grcliente.Controls.Add(this.textBox1);
+            this.grcliente.Controls.Add(this.txtnombre);
             this.grcliente.Controls.Add(this.lblsexo);
-            this.grcliente.Controls.Add(this.textBox3);
-            this.grcliente.Controls.Add(this.radioButton1);
+            this.grcliente.Controls.Add(this.txtcodigo);
+            this.grcliente.Controls.Add(this.rdbfemenino);
             this.grcliente.Controls.Add(this.lblcodigo);
             this.grcliente.Controls.Add(this.rdbmasc);
             this.grcliente.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +223,7 @@
             this.grbmascota.TabIndex = 1;
             this.grbmascota.TabStop = false;
             this.grbmascota.Text = "Mascota";
+            this.grbmascota.Enter += new System.EventHandler(this.grbmascota_Enter);
             // 
             // pictureBox1
             // 
@@ -230,6 +234,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            // 
+            // rdbdias
+            // 
+            this.rdbdias.AutoSize = true;
+            this.rdbdias.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbdias.Location = new System.Drawing.Point(141, 196);
+            this.rdbdias.Name = "rdbdias";
+            this.rdbdias.Size = new System.Drawing.Size(51, 25);
+            this.rdbdias.TabIndex = 7;
+            this.rdbdias.TabStop = true;
+            this.rdbdias.Text = "dias";
+            this.rdbdias.UseVisualStyleBackColor = true;
+            // 
+            // rdbaño
+            // 
+            this.rdbaño.AutoSize = true;
+            this.rdbaño.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbaño.Location = new System.Drawing.Point(141, 174);
+            this.rdbaño.Name = "rdbaño";
+            this.rdbaño.Size = new System.Drawing.Size(55, 25);
+            this.rdbaño.TabIndex = 6;
+            this.rdbaño.TabStop = true;
+            this.rdbaño.Text = "años";
+            this.rdbaño.UseVisualStyleBackColor = true;
             // 
             // cbotipo
             // 
@@ -261,23 +289,23 @@
             this.txtnommascota.Size = new System.Drawing.Size(129, 30);
             this.txtnommascota.TabIndex = 1;
             // 
-            // Atención
+            // lstAtención
             // 
-            this.Atención.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Atención.ForeColor = System.Drawing.Color.Blue;
-            this.Atención.FormattingEnabled = true;
-            this.Atención.ItemHeight = 21;
-            this.Atención.Location = new System.Drawing.Point(565, 75);
-            this.Atención.Name = "Atención";
-            this.Atención.Size = new System.Drawing.Size(205, 172);
-            this.Atención.TabIndex = 3;
+            this.lstAtención.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstAtención.ForeColor = System.Drawing.Color.Blue;
+            this.lstAtención.FormattingEnabled = true;
+            this.lstAtención.ItemHeight = 21;
+            this.lstAtención.Location = new System.Drawing.Point(559, 125);
+            this.lstAtención.Name = "lstAtención";
+            this.lstAtención.Size = new System.Drawing.Size(197, 130);
+            this.lstAtención.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dtpfecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(565, 30);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtpfecha.Location = new System.Drawing.Point(556, 55);
+            this.dtpfecha.Name = "dtpfecha";
+            this.dtpfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpfecha.TabIndex = 2;
             // 
             // txtimporte
             // 
@@ -302,54 +330,60 @@
             // 
             this.btngrabar.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngrabar.ForeColor = System.Drawing.Color.Blue;
-            this.btngrabar.Location = new System.Drawing.Point(171, 257);
+            this.btngrabar.Location = new System.Drawing.Point(111, 257);
             this.btngrabar.Name = "btngrabar";
             this.btngrabar.Size = new System.Drawing.Size(78, 35);
             this.btngrabar.TabIndex = 0;
             this.btngrabar.Text = "Grabar";
             this.btngrabar.UseVisualStyleBackColor = true;
+            this.btngrabar.Click += new System.EventHandler(this.btngrabar_Click);
             // 
-            // rdbaño
+            // txtatencion
             // 
-            this.rdbaño.AutoSize = true;
-            this.rdbaño.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbaño.Location = new System.Drawing.Point(141, 174);
-            this.rdbaño.Name = "rdbaño";
-            this.rdbaño.Size = new System.Drawing.Size(55, 25);
-            this.rdbaño.TabIndex = 6;
-            this.rdbaño.TabStop = true;
-            this.rdbaño.Text = "años";
-            this.rdbaño.UseVisualStyleBackColor = true;
+            this.txtatencion.AutoSize = true;
+            this.txtatencion.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtatencion.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtatencion.Location = new System.Drawing.Point(555, 13);
+            this.txtatencion.Name = "txtatencion";
+            this.txtatencion.Size = new System.Drawing.Size(69, 23);
+            this.txtatencion.TabIndex = 8;
+            this.txtatencion.Text = "Atención";
             // 
-            // rdbdias
+            // txtdescripcion
             // 
-            this.rdbdias.AutoSize = true;
-            this.rdbdias.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbdias.Location = new System.Drawing.Point(141, 196);
-            this.rdbdias.Name = "rdbdias";
-            this.rdbdias.Size = new System.Drawing.Size(51, 25);
-            this.rdbdias.TabIndex = 7;
-            this.rdbdias.TabStop = true;
-            this.rdbdias.Text = "dias";
-            this.rdbdias.UseVisualStyleBackColor = true;
+            this.txtdescripcion.Location = new System.Drawing.Point(557, 92);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(199, 20);
+            this.txtdescripcion.TabIndex = 9;
             // 
-            // grbdueño
+            // txtidatencion
+            // 
+            this.txtidatencion.Location = new System.Drawing.Point(656, 16);
+            this.txtidatencion.Name = "txtidatencion";
+            this.txtidatencion.Size = new System.Drawing.Size(100, 20);
+            this.txtidatencion.TabIndex = 10;
+            this.txtidatencion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // VeterinariaMelgar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(778, 310);
+            this.Controls.Add(this.txtidatencion);
+            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtatencion);
             this.Controls.Add(this.btngrabar);
             this.Controls.Add(this.btnnuevo);
             this.Controls.Add(this.txtimporte);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.Atención);
+            this.Controls.Add(this.dtpfecha);
+            this.Controls.Add(this.lstAtención);
             this.Controls.Add(this.grbmascota);
             this.Controls.Add(this.grcliente);
             this.Controls.Add(this.lblimporte);
             this.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "grbdueño";
+            this.Name = "VeterinariaMelgar";
             this.Text = "Veterinaria Melgar";
             this.Load += new System.EventHandler(this.grbdueño_Load);
             this.grcliente.ResumeLayout(false);
@@ -364,13 +398,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Label lblsexo;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbfemenino;
         private System.Windows.Forms.RadioButton rdbmasc;
         private System.Windows.Forms.Label lblcodigo;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.Label lblimporte;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -380,8 +414,8 @@
         private System.Windows.Forms.ComboBox cbotipo;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox txtnommascota;
-        private System.Windows.Forms.ListBox Atención;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ListBox lstAtención;
+        private System.Windows.Forms.DateTimePicker dtpfecha;
         private System.Windows.Forms.TextBox txtimporte;
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btngrabar;
@@ -389,6 +423,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.RadioButton rdbdias;
         private System.Windows.Forms.RadioButton rdbaño;
+        private System.Windows.Forms.Label txtatencion;
+        private System.Windows.Forms.TextBox txtdescripcion;
+        private System.Windows.Forms.TextBox txtidatencion;
     }
 }
 

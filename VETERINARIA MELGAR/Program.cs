@@ -16,7 +16,7 @@ namespace VETERINARIA_MELGAR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new grbdueño());
+            Application.Run(new VeterinariaMelgar());
         }
     }
 }
