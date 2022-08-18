@@ -8,8 +8,10 @@ namespace VETERINARIA_MELGAR
 {
      class Tipo
     {
+        private int idTipo;
         private string nombre;
 
+        public int IdTipo { get { return idTipo; } set { idTipo = value; } }
         public string Nombre { get { return nombre; } set { nombre = value; } }  
 
         public Tipo()

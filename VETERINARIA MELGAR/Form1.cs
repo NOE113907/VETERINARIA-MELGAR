@@ -83,10 +83,10 @@ namespace VETERINARIA_MELGAR
             bool validado =true;
             if (txtnombre.Text == "") { validado = false; }
             if (txtcodigo.Text == "") { validado = false; }
-            if (txtnommascota.Text==""){ validado = false; }
-            if(rdbfemenino.Checked || rdbmasc.Checked) { validado = false; }  
-            if(rdbdias.Checked || rdbdias.Checked) { validado = false; }
-            return validado;
+            if (txtnommascota.Text=="") { validado = false; }
+            if(!rdbfemenino.Checked && !rdbmasc.Checked) { validado = false; }  
+            if(!rdbdias.Checked && !rdbaño.Checked) { validado = false; }
+            return true;
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -115,11 +115,56 @@ namespace VETERINARIA_MELGAR
                 Atencion oAtencion =new Atencion();
                 oAtencion.Fecha = dtpfecha.Value;
                 oAtencion.Descripcion = txtatencion.Text;
+                oAtencion.Idatencion=Convert.ToInt32(txtidatencion.Text);
+                oAtencion.Importe=Convert.ToInt32(txtimporte.Text);
 
+                Cliente oCliente = new Cliente();
+                oCliente.Nombre=txtnombre.Text;
+                oCliente.Codigo=Convert.ToInt32(txtcodigo.Text);
+                if (rdbmasc.Checked)
+                {
+                    oCliente.Sexo = "Masculino";
+                }
+                else { oCliente.Sexo = "Femenino"; }
 
+                Mascota oMascota=new Mascota();
+                oMascota.Codigo=Convert.ToInt32(txtcodigo.Text);
+                oMascota.Edad=Convert.ToInt32(txtedad.Text);
 
+                Tipo oTipo = new Tipo();
+                /*
+                oTipo.IdTipo = cbotipo.SelectedIndex;
+                oTipo.Nombre = cbotipo.SelectedValue.ToString();
+                */
+                oTipo.IdTipo = 2;
 
-            }
+                oMascota.Tipo = oTipo;
+                oMascota.Atencion = oAtencion;
+
+                /*
+                 * 
+insert into dueños(codigo,nombre_dueño,sexo) values (13,'pedro','Masculino')
+insert into atencion(id_atencion,fecha,descripcion,importe) values(2,'04/04/2022','revision',2)
+insert into mascotas (codigo_mascota,nombre_mascota,edad_mascota,id_tipo,id_atencion)values(2,'pepito',2,2,2)
+
+                 */
+
+                string insertQuery1 = "insert into dueños(codigo,nombre_dueño,sexo) values (@codigo,@nombre_dueño,@SEXO)";
+                string insertQuery2 = "insert into atencion(id_atencion, fecha, descripcion, importe) values(@id_atencion, @fecha, @descripcion, @importe)";
+                string insertQuery3 = "insert into mascotas (codigo_mascota,nombre_mascota,edad_mascota,id_tipo,id_atencion)values(@codigo_mascota,@nombre_mascota,@edad_mascota,@id_tipo,@id_atencion)";
+
+                int fila =acceso.EjecutarInsert(insertQuery1, oCliente,oMascota);
+                acceso.EjecutarInsert(insertQuery2, oCliente, oMascota);
+                acceso.EjecutarInsert(insertQuery3, oCliente, oMascota);
+                if (fila > 1)
+                {
+                    MessageBox.Show("inserto una nueva atencion correctamente");
+                    cargarComboSP();
+                    cargarLista();
+                    limpiarCampos(false);
+                }
+            } else { MessageBox.Show("ERROR"); }
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

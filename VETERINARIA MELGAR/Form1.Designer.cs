@@ -47,7 +47,7 @@
             this.rdbdias = new System.Windows.Forms.RadioButton();
             this.rdbaño = new System.Windows.Forms.RadioButton();
             this.cbotipo = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtedad = new System.Windows.Forms.TextBox();
             this.txtnommascota = new System.Windows.Forms.TextBox();
             this.lstAtención = new System.Windows.Forms.ListBox();
             this.dtpfecha = new System.Windows.Forms.DateTimePicker();
@@ -57,6 +57,7 @@
             this.txtatencion = new System.Windows.Forms.Label();
             this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.txtidatencion = new System.Windows.Forms.TextBox();
+            this.lblnum = new System.Windows.Forms.Label();
             this.grcliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.grbmascota.SuspendLayout();
@@ -210,7 +211,7 @@
             this.grbmascota.Controls.Add(this.rdbdias);
             this.grbmascota.Controls.Add(this.rdbaño);
             this.grbmascota.Controls.Add(this.cbotipo);
-            this.grbmascota.Controls.Add(this.textBox4);
+            this.grbmascota.Controls.Add(this.txtedad);
             this.grbmascota.Controls.Add(this.txtnommascota);
             this.grbmascota.Controls.Add(this.label1);
             this.grbmascota.Controls.Add(this.label2);
@@ -273,13 +274,13 @@
             this.cbotipo.TabIndex = 0;
             this.cbotipo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox4
+            // txtedad
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(85, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(40, 30);
-            this.textBox4.TabIndex = 2;
+            this.txtedad.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtedad.Location = new System.Drawing.Point(85, 183);
+            this.txtedad.Name = "txtedad";
+            this.txtedad.Size = new System.Drawing.Size(40, 30);
+            this.txtedad.TabIndex = 2;
             // 
             // txtnommascota
             // 
@@ -364,12 +365,24 @@
             this.txtidatencion.TabIndex = 10;
             this.txtidatencion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // lblnum
+            // 
+            this.lblnum.AutoSize = true;
+            this.lblnum.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnum.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblnum.Location = new System.Drawing.Point(630, 16);
+            this.lblnum.Name = "lblnum";
+            this.lblnum.Size = new System.Drawing.Size(26, 23);
+            this.lblnum.TabIndex = 11;
+            this.lblnum.Text = "n°";
+            // 
             // VeterinariaMelgar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(778, 310);
+            this.Controls.Add(this.lblnum);
             this.Controls.Add(this.txtidatencion);
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.txtatencion);
@@ -412,7 +425,7 @@
         private System.Windows.Forms.GroupBox grcliente;
         private System.Windows.Forms.GroupBox grbmascota;
         private System.Windows.Forms.ComboBox cbotipo;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.TextBox txtnommascota;
         private System.Windows.Forms.ListBox lstAtención;
         private System.Windows.Forms.DateTimePicker dtpfecha;
@@ -426,6 +439,7 @@
         private System.Windows.Forms.Label txtatencion;
         private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.TextBox txtidatencion;
+        private System.Windows.Forms.Label lblnum;
     }
 }
 
